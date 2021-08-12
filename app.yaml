@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mem-intensive-deployment
+  labels:
+    app: mem-intensive
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mem-intensive
+  template:
+    metadata:
+      labels:
+        app: mem-intensive
+    spec:
+      containers:
+        - name: mem-intensive
+          image: "sbishyr/hazelcast-hackaton:0.6"
+          imagePullPolicy: "IfNotPresent"
+          ports:
+            - name: mem-intensive
+              containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mem-intensive
+  labels:
+    app: mem-intensive
+spec:
+  type: LoadBalancer
+  selector:
+    app: mem-intensive
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: mem-intensive

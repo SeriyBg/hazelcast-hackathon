@@ -1,0 +1,176 @@
+# Memory 2 pods
+
+Summary:
+  Total:        165.0764 secs
+  Slowest:      3.4897 secs
+  Fastest:      1.2052 secs
+  Average:      1.5185 secs
+  Requests/sec: 6.0578
+
+  Total data:   2000 bytes
+  Size/request: 2 bytes
+
+Response time histogram:
+  1.205 [1]     |
+  1.434 [491]   |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.662 [236]   |■■■■■■■■■■■■■■■■■■■
+  1.891 [160]   |■■■■■■■■■■■■■
+  2.119 [70]    |■■■■■■
+  2.347 [23]    |■■
+  2.576 [4]     |
+  2.804 [7]     |■
+  3.033 [4]     |
+  3.261 [0]     |
+  3.490 [4]     |
+
+
+Latency distribution:
+  10% in 1.2243 secs
+  25% in 1.2546 secs
+  50% in 1.4404 secs
+  75% in 1.6919 secs
+  90% in 1.9134 secs
+  95% in 2.0798 secs
+  99% in 2.6880 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0017 secs, 1.2052 secs, 3.4897 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0007 secs
+  resp wait:    1.5167 secs, 1.2051 secs, 3.3370 secs
+  resp read:    0.0001 secs, 0.0000 secs, 0.0006 secs
+
+Status code distribution:
+  [200] 1000 responses
+
+# 2 pods - memory
+Summary:
+  Total:        154.9968 secs
+  Slowest:      2.9302 secs
+  Fastest:      1.2039 secs
+  Average:      1.4382 secs
+  Requests/sec: 6.4517
+
+  Total data:   2000 bytes
+  Size/request: 2 bytes
+
+Response time histogram:
+  1.204 [1]     |
+  1.377 [497]   |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.549 [220]   |■■■■■■■■■■■■■■■■■■
+  1.722 [156]   |■■■■■■■■■■■■■
+  1.894 [106]   |■■■■■■■■■
+  2.067 [9]     |■
+  2.240 [5]     |
+  2.412 [0]     |
+  2.585 [3]     |
+  2.758 [0]     |
+  2.930 [3]     |
+
+
+Latency distribution:
+  10% in 1.2294 secs
+  25% in 1.2549 secs
+  50% in 1.3786 secs
+  75% in 1.5765 secs
+  90% in 1.7618 secs
+  95% in 1.8365 secs
+  99% in 2.1587 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0014 secs, 1.2039 secs, 2.9302 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0006 secs
+  resp wait:    1.4367 secs, 1.2039 secs, 2.7870 secs
+  resp read:    0.0001 secs, 0.0000 secs, 0.0013 secs
+
+Status code distribution:
+  [200] 1000 responses
+
+# 3 pods - cpu
+Summary:
+  Total:        42.2005 secs
+  Slowest:      3.5143 secs
+  Fastest:      0.1399 secs
+  Average:      0.2669 secs
+  Requests/sec: 236.9642
+
+  Total data:   20000 bytes
+  Size/request: 2 bytes
+
+Response time histogram:
+  0.140 [1]     |
+  0.477 [8956]  |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.815 [577]   |■■■
+  1.152 [351]   |■■
+  1.490 [67]    |
+  1.827 [14]    |
+  2.165 [15]    |
+  2.502 [2]     |
+  2.839 [0]     |
+  3.177 [6]     |
+  3.514 [11]    |
+
+
+Latency distribution:
+  10% in 0.1435 secs
+  25% in 0.1510 secs
+  50% in 0.1865 secs
+  75% in 0.2449 secs
+  90% in 0.4953 secs
+  95% in 0.7872 secs
+  99% in 1.1614 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0014 secs, 0.1399 secs, 3.5143 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0007 secs
+  resp wait:    0.2653 secs, 0.1399 secs, 3.3731 secs
+  resp read:    0.0000 secs, 0.0000 secs, 0.0007 secs
+
+Status code distribution:
+  [200] 10000 responses
+
+# 2 pods - cpu
+Summary:
+  Total:        56.6128 secs
+  Slowest:      4.5912 secs
+  Fastest:      0.1400 secs
+  Average:      0.3869 secs
+  Requests/sec: 176.6385
+
+  Total data:   20000 bytes
+  Size/request: 2 bytes
+
+Response time histogram:
+  0.140 [1]     |
+  0.585 [7798]  |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.030 [1941]  |■■■■■■■■■■
+  1.475 [205]   |■
+  1.920 [30]    |
+  2.366 [4]     |
+  2.811 [3]     |
+  3.256 [1]     |
+  3.701 [1]     |
+  4.146 [3]     |
+  4.591 [13]    |
+
+
+Latency distribution:
+  10% in 0.1507 secs
+  25% in 0.1845 secs
+  50% in 0.2709 secs
+  75% in 0.5216 secs
+  90% in 0.8027 secs
+  95% in 0.9368 secs
+  99% in 1.2950 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0015 secs, 0.1400 secs, 4.5912 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0025 secs
+  resp wait:    0.3852 secs, 0.1399 secs, 4.5911 secs
+  resp read:    0.0001 secs, 0.0000 secs, 0.0016 secs
+
+Status code distribution:
+  [200] 10000 responses
